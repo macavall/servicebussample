@@ -17,7 +17,7 @@ public class sbtrigger1
 
     [Function(nameof(sbtrigger1))]
     public async Task Run(
-        [ServiceBusTrigger("myqueue5", Connection = "sbconnstring", IsBatched = false, IsSessionsEnabled = true, AutoCompleteMessages = false)]
+        [ServiceBusTrigger("myqueue5", Connection = "sbconnstring", IsSessionsEnabled = true, AutoCompleteMessages = false)]
         ServiceBusReceivedMessage message,
         ServiceBusMessageActions messageActions)
     {
